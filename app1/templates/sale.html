@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<div class="row" style="margin-top:5%; text-align: center; background-color: red; color: white;">
+    <div class="col-sm-12">
+        <h2>Steel</h2>
+    </div>
+</div>
+<div class="row" style="margin-top:5%;">
+    
+        <div class="card sm-3" style="width: 18rem;height:500px;text-align: center; margin-left: 10px;box-shadow: 0 0 8px 0 black; ">
+            <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\none.jpeg'%}">
+            <div class="card-body">
+                <h5 class="card-title"style="color: red;font-weight: bold;">Non Ferrous</h5>
+                <p class="card-text">
+                    <img class="col-sm-12" src="{% static 'image\order4.PNG'%}" alt="sans"/>
+                </p>
+          
+                <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+            </div>
+        </div>
+    
+        <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;margin-left: 10px;box-shadow: 0 0 8px 0 black; ">
+            <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\non1.jpeg'%}">
+            <div class="card-body">
+                <h5 class="card-title"style="color: red;font-weight: bold;">Non Ferrous</h5>
+                <p class="card-text">
+                    <img class="col-sm-12" src="{% static 'image\order4.PNG'%}" alt="sans"/>
+                </p>
+          
+                <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+            </div>
+        </div>
+        <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;margin-left: 10px;box-shadow: 0 0 8px 0 black; ">
+            <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\none2.jpeg'%}">
+            <div class="card-body">
+                <h5 class="card-title"style="color: red;font-weight: bold;">Non Ferrous</h5>
+                <p class="card-text">
+                    <img class="col-sm-12" src="{% static 'image\order4.PNG'%}" alt="sans"/>
+                </p>
+          
+                <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+            </div>
+        </div>
+        <div class="col-sm-4" style="margin-left: 10px; background-color:white;box-shadow: 0 0 8px 0 black; ">
+            <div class="row" style="background-color: red;">
+                <div class="col-sm-12">
+                    <h3 style="text-align: center; color: white;">Products Added</h3>
+                </div>
+            </div>
+            
+            <div class="row" >
+                <div class="col-sm-12" style="text-align: center;">
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\none.jpeg'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\non1.jpeg'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\none2.jpeg'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal2.png'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal5.png'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal8.png'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal3.jpeg'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal2.png'%}" alt="sans"/>
+                    <img class="col-sm-3" style="margin: 5px;" src="{% static 'image\metal4.jpeg'%}" alt="sans"/>
+                    
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-sm-12" >
+                    <a href="{% url 'last'%}"><input type="button" class="btn btn-danger" value="Proceed" style="margin-top: 30%; width:50%; margin-left: 25%;"></a>
+                </div>
+            </div>
+        </div>
+   
+</div>
+
+{% endblock %}

@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<style>
+    #header{
+        background-image: url("static/image/header.webp");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        b
+    }
+
+</style>
+
+<div class="container-fluid" style=" margin-left: 0; margin-right: 0;">
+    <!--Carosoul-->
+
+    <div class="row" id="header">
+        <div class="col-sm-12"  style="width:100%;height:600px;">
+            <div class="row">
+                <div class="col-sm-6", style="background-color: rgba(0, 0, 0, 0.8);box-shadow: 0 0 8px 0 black; margin-left: 10%; margin-top: 8%; text-align: center; height: 300px;">
+                    <h2 style="color: white; margin-top: 10%;">SEARCH RAW MATERIALS</h2>
+                    <p style="color: white;">Reused & new materials for Food, Non-Food, Chemicals & Feed</p>
+                    <input type="search" placeholder="Product" style="margin: 1%;">
+                    <input type="search" placeholder="Select Industry"  style="margin: 1%;"><br>
+                    <input type="search" placeholder="Select Quantity" style="margin: 1%;">
+                    <input type="button" class="btn btn-danger" value="Search" style="width: 190px;  color: white;margin: 1%;"><br>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="row" style="margin-top: -5%; " >
+        <div class="col-sm-12"  >
+            <nav class="navbar navbar-light bg-light" style="border-radius: 10px;box-shadow: 0 0 8px 0 black;"  >
+                <form class="form-inline" style="margin:0 auto">
+                <button class="btn btn-outline-danger" style="width:200px ;" type="button">Get Best Quotes</button>
+                <button class="btn btn-outline-danger" style="width:200px ;" type="button">Applay For Creadit</button>
+                
+                
+                </form>
+            </nav>
+
+        </div>
+        
+    </div>
+
+    <div class="row" style="margin-top: 5%" >
+        <div class="col-sm-12" style="text-align: center;">
+            <h1>Explore Raw Materials By Popular City</h1>
+
+        </div>
+        
+    </div>
+    
+
+    <div class="row" style="margin: 1%;">
+        <div class="col-sm-6" style="background-image: url('static/image/mumbai.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px; border-radius: 20px; ">
+
+
+        </div>
+        <div class="col-sm-6" style="background-image: url('static/image/delhi.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px;border-radius: 20px;">
+
+
+        </div>
+    </div>
+    <div class="row" style="margin: 1%;">
+        <div class="col-sm-6" style="background-image: url('static/image/hydrabad.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px;border-radius: 20px;">
+
+
+        </div>
+
+        <div class="col-sm-6" style="background-image: url('static/image/kolkata.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px;border-radius: 20px;">
+
+        </div>
+
+    </div>  
+    <div class="row" style="margin: 1%;">
+        <div class="col-sm-6" style="background-image: url('static/image/ahamadabad.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px;border-radius: 20px;">
+
+
+        </div>
+
+        <div class="col-sm-6" style="background-image: url('static/image/bangluru.PNG'); background-position: center;background-size: cover;background-repeat: no-repeat; width:100%; height:300px;border-radius: 20px;">
+
+        </div>
+
+    </div>  
+     
+    
+        
+
+    <div class="row" style="margin-top:5%; background-image: url('static/image/cilvi2.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+                <div class="col-sm-3" style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metel1.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Steel</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order1.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="{% url 'sale'%}"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metal2.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">TMT Bars</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order2.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metal3.jpeg'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Aluminiumt</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order3.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metal4.jpeg'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Non Ferrous</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order4.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style="  width: 18rem;" src="{% static 'image\metal5.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;"> Cement</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order5.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metal6.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Petroleum</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" src="{% static 'image\order6.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%;margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style="  width: 18rem;" src="{% static 'image\metal7.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Chemicals</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12" width="10%" src="{% static 'image\order7.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3"style="margin-top: 2%; margin-bottom:2%">
+                    <div class="card sm-3" style="width: 18rem;height:500px;text-align: center;">
+                        <img class="card-img-top" style=" width: 18rem;" src="{% static 'image\metal8.png'%}">
+                        <div class="card-body">
+                            <h5 class="card-title"style="color: red;font-weight: bold;">Polymers</h5>
+                            <p class="card-text">
+                                <img class="col-sm-12 " sizes="25%" src="{% static 'image\order8.PNG'%}" alt="sans"/>
+                            </p>
+                      
+                            <a href="#"><button class="btn btn-danger">View Product</button> </a> 
+                        </div>
+                    </div>
+                </div>
+       
+    </div>
+
+    
+
+
+</div>
+{% endblock %}
